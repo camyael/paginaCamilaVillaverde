@@ -250,7 +250,8 @@ footer h3 {
     flex-flow: row wrap;
     background-color: #D8F3DC;
     justify-content: center;
-    padding: 15px 20px
+    padding: 15px 20px;
+    position: relative
 }
 
 .bloque1 img {
@@ -265,11 +266,25 @@ footer h3 {
     margin-left: -80px;
 }
 
+.bloque {
+    position: relative;
+}
+
 .bloque2 img {
     width: 300px;
     height: 300px;
     border: 7px solid #C2C5AA;
     border-radius: 50%;
+}
+
+.bloque:hover {
+    transition: all 1s ease-in;
+    transform: translateX(300px)
+}
+
+.textoEscondido {
+    position: absolute;
+    text-align: center;
 }
 
 /* CONTACTO / FORMULARIO */
