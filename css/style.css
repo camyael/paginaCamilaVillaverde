@@ -251,15 +251,11 @@ footer h3 {
     background-color: #D8F3DC;
     justify-content: center;
     padding: 15px 20px;
-<<<<<<< HEAD
-    position: relative
-=======
     position: relative;
 }
 
 .bloque1 {
     transition: all 2s ease-in;
->>>>>>> animaciones
 }
 
 .bloque1 img {
@@ -285,18 +281,6 @@ footer h3 {
     border-radius: 50%;
 }
 
-<<<<<<< HEAD
-.bloque:hover {
-    transition: all 1s ease-in;
-    transform: translateX(300px)
-}
-
-.textoEscondido {
-    position: absolute;
-    text-align: center;
-}
-
-=======
 #bloques:hover .bloque1{
     transform: translateX(-55%);
 }
@@ -346,7 +330,6 @@ footer h3 {
 }
 
 
->>>>>>> animaciones
 /* CONTACTO / FORMULARIO */
 
 #gridcontacto {
