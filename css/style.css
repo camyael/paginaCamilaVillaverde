@@ -250,7 +250,12 @@ footer h3 {
     flex-flow: row wrap;
     background-color: #D8F3DC;
     justify-content: center;
-    padding: 15px 20px
+    padding: 15px 20px;
+    position: relative;
+}
+
+.bloque1 {
+    transition: all 2s ease-in;
 }
 
 .bloque1 img {
@@ -258,11 +263,11 @@ footer h3 {
     height: 300px;
     border: 7px solid #C2C5AA;
     border-radius: 50%;
-    
 }
 
 .bloque2 {
     margin-left: -80px;
+    transition: all 2s ease-in;
 }
 
 .bloque2 img {
@@ -271,6 +276,55 @@ footer h3 {
     border: 7px solid #C2C5AA;
     border-radius: 50%;
 }
+
+#bloques:hover .bloque1{
+    transform: translateX(-55%);
+}
+#bloques:hover .bloque2{
+    transform: translate(55%);
+}
+
+    /* TEXTO ESCONDIDO */
+.textoEscondido {
+    display: none;
+    text-align: center;
+}
+
+.textoEscondido ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.textoEscondido li {
+    list-style: none;
+    padding: 7px;
+}
+
+.textoEscondido img {
+    width: 50px;
+    height: 50px;
+}
+
+.textoEscondido a {
+    font-family: 'DM Serif Display', serif;
+    color: #2D6A4F;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.textoEscondido h3 {
+    color: #2D6A4F;
+}
+
+#bloques:hover .textoEscondido {
+    display: block;
+    position: absolute;
+    top: 100px;
+}
+
 
 /* CONTACTO / FORMULARIO */
 
