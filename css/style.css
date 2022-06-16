@@ -6,6 +6,44 @@
     box-sizing: border-box;
 }
 
+
+    /* ARREGLO DE BOOTSTRAP */
+.bg-light {
+    background-color: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #2D6A4F;
+    padding: 7px;
+    font-weight: bolder
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #163b2a;
+    border-radius: 3px;
+    color:#95D5B2;
+}
+
+.navbar {
+    padding: 0
+}
+
+ul {
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+p {
+    margin: 0;
+}
+
+
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -31,11 +69,6 @@ h2 {
 h3 {
     font-size: 25px;
     font-weight: bold;
-}
-
-p {
-    font-size: 20px;
-    font-weight: 400;
 }
 
 main {
@@ -101,34 +134,6 @@ header h1 {
     margin-bottom: 0;
     font-weight: bolder;
 }
-
-
-    /* ARREGLO DE BOOTSTRAP */
-.bg-light {
-    background-color: none;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    text-decoration: none;
-    color: #2D6A4F;
-    padding: 7px;
-    font-weight: bolder
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    background-color: #163b2a;
-    border-radius: 3px;
-    color:#95D5B2;
-}
-
-.navbar {
-    padding: 0
-}
-
-ul {
-    padding-left: 0;
-}
-
 
 /* FOOTER */
 
@@ -197,6 +202,8 @@ footer h3 {
 
 .principal_plantadelmes {
     text-align: center;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .plantadelmes_info {
