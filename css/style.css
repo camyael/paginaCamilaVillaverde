@@ -92,6 +92,7 @@ header h1 {
     padding: 5px;
     color: #2D6A4F;
     grid-area: logo;
+    margin-bottom: 0;
 }
 
 
