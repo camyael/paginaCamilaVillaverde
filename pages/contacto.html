@@ -49,7 +49,7 @@
     </header>
 
     <main>
-        <section id="contacto">
+        <!-- <section id="contacto">
             <h2>
                 Contactate con nosotros
             </h2>
@@ -97,7 +97,60 @@
                 </div>
 
             </form>
+        </section> -->
+
+        <section id="contacto">
+            <h2>
+                Contactate con nosotros
+            </h2>
+        <form action="#">
+        <div class="col">
+            <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+            </div>
+
+            <div class="row">
+                <label for="inputEmail4" class="form-label email">Introduzca su mail:</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="example@gmail.com">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono">
+            </div>
+            <div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione su motivo</option>
+                <option value="1">Comprar</option>
+                <option value="2">Problemas en la compra</option>
+                <option value="3">Consultas</option>
+              </select>
+            </div>
+            <div>
+                <label for="floatingTextarea">
+                    <textarea class="form-control" placeholder="Detalle aquí" id="floatingTextarea"></textarea>
+                </label>
+            </div>
+
+            <div>
+                <div> Quiero suscribirme al newsletter 
+                    <input type="checkbox" name="acepta" value="1">
+                </div>
+            </div>
+           
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetear">
+            </div>
+
+        </div>
+
+        </form>
         </section>
+
     </main>
 
     <footer>

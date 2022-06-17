@@ -91,7 +91,7 @@ header {
 
 header nav {
     padding: 7px;
-    background-color: #95D5B2;
+    background-color: #9fd3b7;
     text-transform:  uppercase;
     grid-area: nav;
 }
@@ -126,7 +126,7 @@ header nav ul li a:hover {
 }
 
 header h1 {
-    background-color: #D8F3DC;
+    background-color: #eafef7;
     font-family: 'DM Serif Display', serif;
     font-size: 35px;
     letter-spacing: 10px;
@@ -137,10 +137,15 @@ header h1 {
     font-weight: bolder;
 }
 
+h1 a:hover {
+    color: #2D6A4F;
+}
+
+
 /* FOOTER */
 
 footer {
-    background-color: #95D5B2;
+    background-color: #bbe9d9;
     padding: 20px;
     grid-area: footer;
 }
@@ -152,6 +157,7 @@ footer div {
 footer div ul {
     display: flex;
     flex-flow: row wrap;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -291,7 +297,7 @@ footer h3 {
     grid-area: bloques;
     display: flex;
     flex-flow: row wrap;
-    background-color: #D8F3DC;
+    background-color: #eafef7;
     justify-content: center;
     padding: 15px 20px;
     position: relative;
@@ -403,8 +409,9 @@ footer h3 {
     border: none;
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 5px 0px;
 }
+
 
 #contacto form {
     display: flex;
@@ -414,6 +421,7 @@ footer h3 {
     padding: 10px 100px 10px 100px;
     background-color: rgba(125, 177, 144, 0.491);
     width: 700px;
+    height: auto;
 } 
 
 .botones input {
@@ -932,10 +940,6 @@ footer h3 {
         width: 550px;
     } 
 
-    #gridcontacto main {
-        margin-bottom: 220px;
-    }
-
 }
 
 @media (max-width: 600px) {
@@ -1092,9 +1096,6 @@ footer h3 {
         margin-right: 0;
     } 
 
-    #gridcontacto main {
-        margin-bottom: 220px;
-    }
 
     #contacto label, #contacto input, #contacto textarea, #contacto div {
         font-size: 17px;
