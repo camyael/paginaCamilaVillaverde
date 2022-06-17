@@ -42,7 +42,9 @@ p {
     margin: 0;
 }
 
-
+a:hover {
+    color: black;
+}
 
 img {
     max-width: 100%;
