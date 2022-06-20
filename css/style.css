@@ -46,6 +46,10 @@ a:hover {
     color: black;
 }
 
+.row {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -80,16 +84,8 @@ main {
 
 /* HEADER */
 
-header {
-    text-align: center;
-}
-
-#menu {
-    width: 100%;
-    top: 0px;
-}
-
 header nav {
+    text-align: center;
     padding: 7px;
     background-color: #9fd3b7;
     text-transform:  uppercase;
@@ -126,6 +122,7 @@ header nav ul li a:hover {
 }
 
 header h1 {
+    text-align: center;
     background-color: #eafef7;
     font-family: 'DM Serif Display', serif;
     font-size: 35px;
@@ -173,7 +170,7 @@ footer div ul li div {
 }
 
 footer h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -1108,6 +1105,7 @@ footer h3 {
 }
 
 @media (max-width: 480px) {
+
     header h1 {
         font-size: 27px;
     }
