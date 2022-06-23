@@ -109,31 +109,29 @@ footer {
     background-color: #bbe9d9;
     padding: 20px;
     grid-area: footer;
-}
-
-footer div {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-footer div ul {
+.elementos_footer {
     display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
+    flex-flow: column nowrap;
     justify-content: center;
 }
 
-footer div ul li{
-    display: inline-block;
-    list-style-type: none;
-    padding: 0px 20px;
+.elementos_footer div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-footer div ul li div {
-    display: inline-block;
-    text-align: center;
+.elementos_footer a {
+    text-decoration: none;
 }
 
-footer h3 {
+.elementos_footer h3 {
     font-size: 18px;
     font-weight: bold;
 }
