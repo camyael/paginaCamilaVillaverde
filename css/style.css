@@ -6,13 +6,9 @@
     box-sizing: border-box;
 }
 
-
     /* ARREGLO DE BOOTSTRAP */
-.bg-light {
-    background-color: none;
-}
 
-.navbar-light .navbar-nav .nav-link {
+.nav-link {
     text-decoration: none;
     color: #2D6A4F;
     padding: 7px;
@@ -20,17 +16,14 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    background-color: #163b2a;
+    background-color: #3a5f4e;
     border-radius: 3px;
-    color:#95D5B2;
+    color:#8ac3b5;
 }
 
-.navbar {
-    padding: 0
-}
-
-ul {
-    padding-left: 0;
+ul, .navbar, p, .row {
+    padding: 0;
+    margin: 0
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,21 +31,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: normal;
 }
 
-p {
-    margin: 0;
-}
-
 a:hover {
     color: black;
 }
 
-.row {
-    margin: 0;
-}
-
 img {
     max-width: 100%;
-    max-height: 100%;
 }
 
 /* GENERALES */
@@ -65,16 +49,6 @@ body {
     background-color: white;
     line-height: normal;
     color: black;
-}
-
-h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 25px;
-    font-weight: bold;
 }
 
 main {
@@ -93,15 +67,11 @@ header nav {
 }
 
 header nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
     gap: 40px;
     margin-bottom: 0;
 }
 
 header nav ul li{
-    list-style-type: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
     margin: 2px 0px;
@@ -113,12 +83,6 @@ header a {
     color: #2D6A4F;
     padding: 7px;
     font-weight: bolder;
-}
-
-header nav ul li a:hover {
-    background-color: #163a3b;
-    border-radius: 3px;
-    color:#eafef7;
 }
 
 header h1 {
@@ -171,6 +135,7 @@ footer div ul li div {
 
 footer h3 {
     font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -178,7 +143,7 @@ footer h3 {
 
 #gridindex {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "logo"
         "nav"
         "sectionPrincipal"
@@ -380,7 +345,7 @@ footer h3 {
 
 #gridcontacto {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "logo"
     "nav"
     "contacto"
@@ -409,7 +374,6 @@ footer h3 {
     padding: 5px 0px;
 }
 
-
 #contacto form {
     display: flex;
     align-items: center;
@@ -419,7 +383,7 @@ footer h3 {
     background-color: #8ac3b5b2;
     width: 700px;
     height: auto;
-} 
+}
 
 .botones input {
     border-radius: 5px;
@@ -436,7 +400,7 @@ footer h3 {
 
 #gridcatalogo {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "logo"
     "nav"
     "catalogo"
@@ -467,6 +431,12 @@ footer h3 {
 
 .catalogodiv figure figcaption {
     font-weight: bolder;
+}
+
+.productosdimensiones {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
 }
 
 .productosdimensiones img {
@@ -601,7 +571,7 @@ footer h3 {
     .plantadelmes_info p {
         font-size: 17px;
     }
-    
+
     .plantadelmes_info a {
         text-decoration: none;
         color: black;
@@ -671,7 +641,7 @@ footer h3 {
         width: 250px;
         height: 250px;
         border-radius: 50%;
-        
+
     }
 
     .bloque2 {
@@ -714,7 +684,7 @@ footer h3 {
         padding: 10px 100px 10px 100px;
         background-color: rgba(125, 177, 144, 0.491);
         width: 700px;
-    } 
+    }
 
     .botones input {
         border-radius: 5px;
@@ -759,7 +729,7 @@ footer h3 {
     #cuidados p {
         font-size: 17px;
     }
-        
+
 
     /* NOSOTROS */
 
@@ -794,7 +764,7 @@ footer h3 {
     /* INDEX */
     #gridindex {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "logo"
             "nav"
             "sectionPrincipal"
@@ -866,16 +836,16 @@ footer h3 {
         color:#5da384;
         text-decoration: underline;
     }
-    
+
     .bloque1 img {
         width: 170px;
         height: 170px;
     }
-    
+
     .bloque2 {
         margin-left: -40px;
     }
-    
+
     .bloque2 img {
         width: 170px;
         height: 170px;
@@ -885,15 +855,15 @@ footer h3 {
         width: 30px;
         height: 30px;
     }
-    
+
     .textoEscondido a {
         font-size: 17px;
     }
-    
+
     .textoEscondido h3 {
         font-size: 20px;
     }
-    
+
     #bloques:hover .textoEscondido {
         top: 70px;
     }
@@ -912,33 +882,33 @@ footer h3 {
         margin: 5px 40px 10px 40px;
         padding: 5px 40px 20px 40px;
     }
-    
+
     #cuidados p {
         font-size: 17px;
         margin-bottom: 40px;
         font-weight: 400;
     }
-    
+
     #cuidados h3 {
         margin-bottom: 9px;
         padding-left: 15px;
         font-size: 23px;
     }
-    
+
     /* NOSOTROS */
     #nosotros h3 {
         font-weight: 600;
         margin-bottom: 10px;
     }
-    
+
     .nosotros_medidas {
         margin: 20px 50px 70px 50px;
     }
-    
+
     #nosotros div {
         padding: 30px 40px 50px;
     }
-    
+
     #nosotros a {
         color: #377d5e;
     }
@@ -946,16 +916,16 @@ footer h3 {
     #nosotros a:active {
         color: #bae1cf;
     }
-    
+
     /* CONTACTO */
     #contacto {
         margin: 20px 0px 50px 0px;
     }
-    
+
     #contacto form {
         padding: 10px;
         width: 550px;
-    } 
+    }
 
 }
 
@@ -963,7 +933,7 @@ footer h3 {
     /* INDEX */
     #gridindex {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "logo"
             "nav"
             "sectionPrincipal"
@@ -1040,16 +1010,16 @@ footer h3 {
         color:#5da384;
         text-decoration: underline;
     }
-        
+
     .bloque1 img {
         width: 150px;
         height: 150px;
     }
-        
+
     .bloque2 {
         margin-left: -40px;
     }
-        
+
     .bloque2 img {
         width: 150px;
         height: 150px;
@@ -1059,15 +1029,15 @@ footer h3 {
         width: 30px;
         height: 30px;
     }
-    
+
     .textoEscondido a {
         font-size: 15px;
     }
-    
+
     .textoEscondido h3 {
         font-size: 17px;
     }
-    
+
     #bloques:hover .textoEscondido {
         top: 70px;
     }
@@ -1086,33 +1056,33 @@ footer h3 {
         margin: 5px 20px 10px 20px;
         padding: 5px 30px 20px 30px;
     }
-        
+
     #cuidados p {
         font-size: 17px;
         margin-bottom: 40px;
         font-weight: 400;
     }
-        
+
     #cuidados h3 {
         margin-bottom: 9px;
         padding-left: 15px;
         font-size: 23px;
     }
-        
+
     /* NOSOTROS */
     #nosotros h3 {
         font-weight: 600;
         margin-bottom: 10px;
     }
-        
+
     .nosotros_medidas {
         margin: 20px 40px 70px 40px;
     }
-        
+
     #nosotros div {
         padding: 30px 40px 50px;
     }
-        
+
     #nosotros a {
         color: #377d5e;
     }
@@ -1124,18 +1094,18 @@ footer h3 {
     #nosotros p {
         font-weight: 400;
     }
-        
+
         /* CONTACTO */
     #contacto {
         margin: 20px 0px 50px 0px;
     }
-        
+
     #contacto form {
         padding: 10px 0px;
         width: 450px;
         margin-left: 0;
         margin-right: 0;
-    } 
+    }
 
 
     #contacto label, #contacto input, #contacto textarea, #contacto div {
@@ -1145,7 +1115,7 @@ footer h3 {
         text-align: center;
         padding: 5px;
     }
-        
+
 }
 
 @media (max-width: 480px) {
@@ -1161,7 +1131,7 @@ footer h3 {
         align-items: center;
         justify-content: center;
     }
-    
+
     .plantadelmes_info {
         display: flex;
         flex-flow: column nowrap;
@@ -1180,7 +1150,7 @@ footer h3 {
         padding: 0;
         margin: 0;
     }
-    
+
     .plantadelmes_info h3 a {
         text-align: center;
         font-size: 16px;
@@ -1192,26 +1162,26 @@ footer h3 {
     .plantadelmes_info p {
         font-size: 15px;
     }
-    
+
     .principal_producto {
         text-align: center;
         justify-content: center;
         margin-left: 0px;
         margin-top: 10px;
     }
-    
+
     .principal_producto img {
         border-radius: 50%;
         width: 250px;
         height: 270px;
     }
-    
+
     #sectionSecundaria {
         flex-flow: column nowrap;
         padding: 0px 8px;
         margin: 15px 8px;
     }
-    
+
     #sectionSecundaria p {
         padding-top: 7px;
         font-size: 13px;
@@ -1220,21 +1190,21 @@ footer h3 {
     #sectionSecundaria h2 {
         font-size: 20px;
     }
-    
+
     #sectionSecundaria a:active {
         color:#5da384;
         text-decoration: underline;
     }
-        
+
     .bloque1 img {
         width: 150px;
         height: 150px;
     }
-        
+
     .bloque2 {
         margin-left: -30px;
     }
-        
+
     .bloque2 img {
         width: 150px;
         height: 150px;
@@ -1244,34 +1214,34 @@ footer h3 {
         width: 30px;
         height: 30px;
     }
-    
+
     .textoEscondido a {
         font-size: 15px;
     }
-    
+
     .textoEscondido h3 {
         font-size: 17px;
     }
-    
+
     #bloques:hover .textoEscondido {
         top: 70px;
     }
 
-    
+
     /* CATALOGO RESPONSIVE CON FLEX ROW WRAP */
-    
+
     /* TIPS Y CUIDADOS */
     #cuidados div {
         margin: 0px 15px 10px 15px;
         padding: 5px 10px 20px 10px;
     }
-        
+
     #cuidados p {
         font-size: 15px;
         margin-bottom: 40px;
         font-weight: 400;
     }
-        
+
     #cuidados h3 {
         margin-bottom: 9px;
         padding-left: 0px;
@@ -1287,19 +1257,19 @@ footer h3 {
         font-weight: 600;
         margin-bottom: 10px;
     }
-        
+
     .nosotros_medidas {
         margin: 20px 30px 70px 30px;
     }
-        
+
     #nosotros div {
         padding: 30px 30px 50px;
     }
-        
+
     #nosotros a {
         color: #377d5e;
     }
-    
+
     #nosotros a:active {
         color: #bae1cf;
     }
@@ -1307,7 +1277,7 @@ footer h3 {
     #nosotros p {
         font-size: 17px;
     }
-        
+
         /* CONTACTO */
     #contacto {
         margin: 20px 0px 50px 0px;
@@ -1318,7 +1288,7 @@ footer h3 {
         margin-left: 0;
         margin-right: 0;
         padding: 2px 0px 2px 0px;
-    } 
+    }
 
     #contacto input,
     #contacto label,
@@ -1332,7 +1302,7 @@ footer h3 {
         flex-flow: row wrap;
         justify-content: center;
     }
-    
+
     #contacto h2 {
         padding: 5px;
     }
