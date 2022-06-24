@@ -58,12 +58,16 @@ main {
 
 /* HEADER */
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 header nav {
     text-align: center;
     padding: 7px;
     background-color: #8ac3b5;
     text-transform:  uppercase;
-    grid-area: nav;
 }
 
 header nav ul {
@@ -93,7 +97,6 @@ header h1 {
     letter-spacing: 10px;
     padding: 5px;
     color: #2d6a5f;
-    grid-area: logo;
     margin-bottom: 0;
     font-weight: bolder;
 }
@@ -108,10 +111,9 @@ h1 a:hover {
 footer {
     background-color: #bbe9d9;
     padding: 20px;
-    grid-area: footer;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
@@ -139,24 +141,11 @@ footer {
 
 /* MAIN INDEX */
 
-#gridindex {
-    display: grid;
-    grid-template-areas:
-        "logo"
-        "nav"
-        "sectionPrincipal"
-        "bloques"
-        "sectionSecundaria"
-        "separadorPrincipal"
-        "footer";
-}
-
 #sectionPrincipal {
     background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    grid-area: sectionPrincipal;
     height: 90vh;
 
 }
@@ -225,7 +214,6 @@ footer {
     text-align: end;
     margin: 60px 20px;
     height: 250px;
-    grid-area: sectionSecundaria;
     padding: 0px 150px;
 }
 
@@ -248,13 +236,11 @@ footer {
 
 .separadorPrincipal {
     width: 100%;
-    grid-area: separadorPrincipal;
 }
 
 /* DISEÑO BLOQUE */
 
 #bloques {
-    grid-area: bloques;
     display: flex;
     flex-flow: row wrap;
     background-color: #eafef7;
@@ -277,10 +263,6 @@ footer {
 .bloque2 {
     margin-left: -80px;
     transition: all 2s ease-in;
-}
-
-.bloque {
-    position: relative;
 }
 
 .bloque2 img {
@@ -341,18 +323,8 @@ footer {
 
 /* CONTACTO / FORMULARIO */
 
-#gridcontacto {
-    display: grid;
-    grid-template-areas:
-    "logo"
-    "nav"
-    "contacto"
-    "footer";
-}
-
 #contacto {
     margin: 20px 20px 50px 20px;
-    grid-area: contacto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -389,19 +361,6 @@ footer {
 }
 
 /* CATALOGO */
-
-#gridcatalogo {
-    display: grid;
-    grid-template-areas:
-    "logo"
-    "nav"
-    "catalogo"
-    "footer";
-}
-
-#catalogo {
-    grid-area: catalogo;
-}
 
 #catalogo h2 {
     text-align: center;
@@ -448,15 +407,6 @@ footer {
 
 /* CUIDADOS */
 
-#gridcuidados {
-    display: grid;
-    grid-template-areas:
-    "logo"
-    "nav"
-    "cuidados"
-    "footer";
-}
-
 #cuidados h2 {
     text-align: center;
     padding: 50px 100px 20px 100px;
@@ -480,22 +430,8 @@ footer {
     padding-left: 20px;
 }
 
-#cuidados {
-    grid-area: cuidados;
-}
-
 
 /* NOSOTROS */
-
-#gridnos {
-    display: grid;
-    grid-template-areas:
-    "logo"
-    "nav"
-    "nosotros"
-    "separadorNos"
-    "footer";
-}
 
 #nosotros h2 {
     text-align: center;
@@ -521,17 +457,6 @@ footer {
     font-weight: 600;
     text-decoration: none;
 }
-
-#nosotros {
-    grid-area: nosotros;
-}
-
-
-.sepadorNos {
-    grid-area: separadorNos;
-}
-
-
 
 /* MEDIA QUERIES */
 
@@ -634,17 +559,6 @@ footer {
 
 @media (max-width: 768px) {
     /* INDEX */
-    #gridindex {
-        display: grid;
-        grid-template-areas:
-            "logo"
-            "nav"
-            "sectionPrincipal"
-            "bloques"
-            "sectionSecundaria"
-            "separadorPrincipal"
-            "footer";
-    }
 
     #sectionPrincipal {
         flex-flow: column nowrap;
@@ -769,18 +683,6 @@ footer {
 
 @media (max-width: 600px) {
     /* INDEX */
-    #gridindex {
-        display: grid;
-        grid-template-areas:
-            "logo"
-            "nav"
-            "sectionPrincipal"
-            "bloques"
-            "sectionSecundaria"
-            "separadorPrincipal"
-            "footer";
-    }
-
     .plantadelmes_info {
         height: 200px;
         width: 400px;
