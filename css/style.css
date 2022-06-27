@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@200;300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -34,13 +35,14 @@ header {
   header h1 {
     text-align: center;
     background-color: #eafef7;
-    font-family: 'DM Serif Display', serif;
+    font-family: "DM Serif Display", serif;
     font-size: 35px;
     letter-spacing: 10px;
     padding: 5px;
     color: #2d6a5f;
+    font-weight: bolder;
     margin-bottom: 0;
-    font-weight: bolder; }
+    line-height: normal; }
     header h1 a {
       text-decoration: none;
       color: #2D6A4F;
@@ -57,7 +59,158 @@ header {
       gap: 40px;
       margin-bottom: 0; }
       header nav ul li {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         font-size: 15px;
-        margin: 2px 0px;
         font-weight: bolder; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #2D6A4F;
+          font-weight: bolder; }
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #bbe9d9;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+  footer .elementos_footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
+    footer .elementos_footer h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+      line-height: normal; }
+    footer .elementos_footer div {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between; }
+      footer .elementos_footer div a {
+        text-decoration: none; }
+
+main {
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif; }
+  main #sectionPrincipal {
+    background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center; }
+    main #sectionPrincipal .principal_plantadelmes {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: "Josefin Sans", sans-serif; }
+      main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #66a09173;
+        margin-left: 0px;
+        border-radius: 10px;
+        height: 300px;
+        width: 500px;
+        padding: 0px 10px;
+        line-height: normal; }
+        main #sectionPrincipal .principal_plantadelmes .plantadelmes_info:hover {
+          background-color: #ddfff08a;
+          border-radius: 40px; }
+        main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 {
+          text-align: center;
+          font-size: 20px;
+          padding-top: 10px; }
+          main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
+            text-decoration: none;
+            color: black; }
+            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a:hover {
+              color: rgba(8, 57, 29, 0.487); }
+    main #sectionPrincipal .principal_producto {
+      text-align: center;
+      margin-left: -12px; }
+      main #sectionPrincipal .principal_producto img {
+        border-radius: 70%;
+        box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45); }
+  main #bloques {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #eafef7;
+    justify-content: center;
+    padding: 15px 20px;
+    position: relative; }
+    main #bloques:hover .textoEscondido {
+      display: block;
+      position: absolute;
+      top: 100px; }
+    main #bloques:hover .bloque1 {
+      transform: translateX(-60%); }
+    main #bloques:hover .bloque2 {
+      transform: translateX(60%); }
+    main #bloques .textoEscondido {
+      display: none;
+      text-align: center; }
+      main #bloques .textoEscondido h3 {
+        color: #2D6A4F; }
+      main #bloques .textoEscondido ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center; }
+        main #bloques .textoEscondido ul li {
+          list-style: none;
+          padding: 7px; }
+          main #bloques .textoEscondido ul li img {
+            width: 50px;
+            height: 50px; }
+          main #bloques .textoEscondido ul li a {
+            font-family: "DM Serif Display", serif;
+            color: #2D6A4F;
+            text-decoration: none;
+            font-size: 25px; }
+    main #bloques .bloque1 {
+      transition: all 2s ease-in; }
+      main #bloques .bloque1 img {
+        width: 300px;
+        height: 300px;
+        border: 7px solid #daebe5;
+        border-radius: 50%; }
+    main #bloques .bloque2 {
+      margin-left: -80px;
+      transition: all 2s ease-in; }
+      main #bloques .bloque2 img {
+        width: 300px;
+        height: 300px;
+        border: 7px solid #daebe5;
+        border-radius: 50%; }
+  main .secundaria #sectionSecundaria {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: end;
+    margin: 60px 20px;
+    height: 250px;
+    padding: 0px 150px; }
+    main .secundaria #sectionSecundaria p {
+      padding-top: 15px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: normal; }
+      main .secundaria #sectionSecundaria p a {
+        text-decoration: none;
+        color: #163b2a;
+        font-weight: 600; }
+        main .secundaria #sectionSecundaria p a:hover {
+          color: #5da384;
+          text-decoration: underline; }
+  main .separadorPrincipal {
+    width: 100%; }

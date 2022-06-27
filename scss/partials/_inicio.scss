@@ -1,0 +1,171 @@
+@import '../base/base';
+
+main {
+    min-height: 100vh;
+    font-family: $font-general;
+    #sectionPrincipal {
+        background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        .principal_plantadelmes {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: $font-general;
+
+            .plantadelmes_info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #66a09173;
+                margin-left: 0px;
+                border-radius: 10px;
+                height: 300px;
+                width: 500px;
+                padding: 0px 10px;
+                line-height: normal;
+
+                &:hover {
+                    background-color: #ddfff08a;
+                    border-radius: 40px;
+                }
+
+                h3 {
+                    text-align: center;
+                    font-size: 20px;
+                    padding-top: 10px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            color:rgba(8, 57, 29, 0.487)
+                        }
+                    }
+                }
+            }
+        }
+
+        .principal_producto {
+            text-align: center;
+            margin-left: -12px;
+            img {
+                border-radius: 70%;
+                box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.45);
+                -webkit-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.45);
+                -moz-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.45);
+            }
+        }
+    }
+
+    #bloques {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #eafef7;
+        justify-content: center;
+        padding: 15px 20px;
+        position: relative;
+        &:hover {
+            .textoEscondido {
+                display: block;
+                position: absolute;
+                top: 100px;
+            }
+            .bloque1 {
+                transform: translateX(-60%);
+            }
+            .bloque2 {
+                transform: translateX(60%);
+            }
+        }
+
+        .textoEscondido {
+            display: none;
+            text-align: center;
+            h3 {
+                color: #2D6A4F;
+            }
+            ul {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                li {
+                    list-style: none;
+                    padding: 7px;
+                    img {
+                        width: 50px;
+                        height: 50px;  
+                    }
+                    a {
+                        font-family: $font-titulo;
+                        color: #2D6A4F;
+                        text-decoration: none;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .bloque1 {
+            transition: all 2s ease-in;
+            img {
+                width: 300px;
+                height: 300px;
+                border: 7px solid #daebe5;
+                border-radius: 50%;
+            }
+        }
+
+        .bloque2 {
+            margin-left: -80px;
+            transition: all 2s ease-in;
+            img {
+                width: 300px;
+                height: 300px;
+                border: 7px solid #daebe5;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .secundaria {
+        #sectionSecundaria {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            text-align: end;
+            margin: 60px 20px;
+            height: 250px;
+            padding: 0px 150px;
+            p {
+                padding-top: 15px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: normal;
+                a {
+                    text-decoration: none;
+                    color: #163b2a;
+                    font-weight: 600;
+                    &:hover {
+                        color:#5da384;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .separadorPrincipal {
+        width: 100%;
+    }
+}

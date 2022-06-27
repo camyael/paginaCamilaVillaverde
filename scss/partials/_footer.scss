@@ -1,0 +1,30 @@
+@import '../base/base';
+
+footer {
+    font-family: $font-general;
+    background-color: #bbe9d9;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    .elementos_footer  {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0;
+            line-height: normal;
+        }
+        div {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
