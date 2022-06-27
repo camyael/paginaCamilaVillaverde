@@ -1,0 +1,40 @@
+header {
+    position: sticky;
+    top: 0;
+    h1 {
+        text-align: center;
+        background-color: #eafef7;
+        font-family: 'DM Serif Display', serif;
+        font-size: 35px;
+        letter-spacing: 10px;
+        padding: 5px;
+        color: #2d6a5f;
+        margin-bottom: 0;
+        font-weight: bolder;
+        a {
+            text-decoration: none;
+        color: #2D6A4F;
+        padding: 7px;
+        font-weight: bolder;
+            &:hover {
+                color: #2D6A4F;
+            }
+        }
+    }
+    nav {
+        text-align: center;
+        padding: 7px;
+        background-color: #8ac3b5;
+        text-transform:  uppercase;
+        ul {
+            gap: 40px;
+            margin-bottom: 0;
+            li {
+                font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px;
+            margin: 2px 0px;
+            font-weight: bolder;
+            }
+        }
+    }
+}
