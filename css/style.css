@@ -214,3 +214,32 @@ main {
           text-decoration: underline; }
   main .separadorPrincipal {
     width: 100%; }
+
+main {
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif; }
+  main #catalogo h2 {
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px; }
+  main #catalogo .catalogodiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    main #catalogo .catalogodiv figure {
+      text-align: center;
+      padding-left: 20px;
+      margin-bottom: 55px; }
+      main #catalogo .catalogodiv figure img {
+        width: 200px;
+        height: 300px;
+        border-radius: 15px; }
+      main #catalogo .catalogodiv figure:hover {
+        transform: scale(1.3);
+        transition-duration: 0.7s; }
+      main #catalogo .catalogodiv figure .productosdimensiones {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0.5rem; }
+      main #catalogo .catalogodiv figure figcaption {
+        font-weight: bolder; }

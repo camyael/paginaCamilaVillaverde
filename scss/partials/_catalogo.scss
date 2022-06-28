@@ -1,0 +1,41 @@
+@import '../base/base';
+
+main {
+    min-height: 100vh;
+    font-family: $font-general;
+    #catalogo {
+        h2 {
+            text-align: center;
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+
+        .catalogodiv {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            figure {
+                text-align: center;
+                padding-left: 20px;
+                margin-bottom: 55px;
+                img {
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 15px;
+                }
+                &:hover {
+                    transform: scale(1.3);
+                    transition-duration: 0.7s;
+                }
+                .productosdimensiones {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 0.5rem;
+                }
+                figcaption {
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
