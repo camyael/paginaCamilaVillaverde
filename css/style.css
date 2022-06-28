@@ -3,26 +3,6 @@
   margin: 0;
   padding: 0; }
 
-/* ARREGLO DE BOOTSTRAP */
-.nav-link {
-  text-decoration: none;
-  color: #2D6A4F;
-  padding: 7px;
-  font-weight: bolder; }
-
-.navbar-light .navbar-nav .nav-link:hover {
-  background-color: #3a5f4e;
-  border-radius: 3px;
-  color: #8ac3b5; }
-
-ul, .navbar, p, .row {
-  padding: 0;
-  margin: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0;
-  line-height: normal; }
-
 a:hover {
   color: black; }
 
@@ -66,6 +46,20 @@ header {
           text-decoration: none;
           color: #2D6A4F;
           font-weight: bolder; }
+
+.navbar {
+  padding: 0;
+  margin: 0; }
+  .navbar .nav-link {
+    text-decoration: none;
+    color: #2D6A4F;
+    padding: 7px;
+    font-weight: bolder; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #3a5f4e;
+  border-radius: 3px;
+  color: #8ac3b5; }
 
 footer {
   font-family: "Josefin Sans", sans-serif;
