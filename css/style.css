@@ -75,6 +75,10 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly; }
+  @media (max-width: 480px) {
+    footer {
+      flex-flow: column nowrap;
+      gap: 15px; } }
   footer .elementos_footer {
     display: flex;
     flex-flow: column nowrap;
@@ -84,12 +88,22 @@ footer {
       font-weight: bold;
       margin-bottom: 0;
       line-height: normal; }
+      @media (max-width: 480px) {
+        footer .elementos_footer h3 {
+          font-size: 15px; } }
     footer .elementos_footer div {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between; }
+      @media (max-width: 480px) {
+        footer .elementos_footer div {
+          justify-content: center; } }
       footer .elementos_footer div a {
         text-decoration: none; }
+      @media (max-width: 480px) {
+        footer .elementos_footer div img {
+          width: 30px;
+          height: 30px; } }
 
 main {
   font-family: "Josefin Sans", sans-serif; }
@@ -507,6 +521,25 @@ main #contacto {
     background-color: #8ac3b5b2;
     width: 700px;
     height: auto; }
+    @media (max-width: 768px) {
+      main #contacto form {
+        padding: 10px;
+        width: 550px; } }
+    @media (max-width: 600px) {
+      main #contacto form {
+        width: 450px; } }
+    @media (max-width: 480px) {
+      main #contacto form {
+        width: 320px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2px 0px 2px 0px; } }
+    main #contacto form .row {
+      display: flex;
+      flex-flow: row nowrap; }
+      @media (max-width: 480px) {
+        main #contacto form .row {
+          flex-direction: column; } }
     main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
       font-family: "Josefin Sans", sans-serif;
       font-size: 20px;
@@ -514,6 +547,16 @@ main #contacto {
       border-radius: 20px;
       text-align: center;
       padding: 5px 0px; }
+      @media (max-width: 1024px) {
+        main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+          padding: 10px; } }
+      @media (max-width: 600px) {
+        main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+          padding: 5px;
+          font-size: 17px; } }
+      @media (max-width: 600px) {
+        main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+          font-size: 15px; } }
     main #contacto form .botones input {
       border-radius: 15px;
       padding: 10px; }

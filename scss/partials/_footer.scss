@@ -8,6 +8,12 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+
+    @media (max-width: 480px) {
+        flex-flow: column nowrap;
+        gap: 15px;
+    }
+
     .elementos_footer  {
         display: flex;
         flex-flow: column nowrap;
@@ -17,13 +23,25 @@ footer {
             font-weight: bold;
             margin-bottom: 0;
             line-height: normal;
+            @media (max-width: 480px) {
+                font-size: 15px;
+            }
         }
         div {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+            @media (max-width: 480px) {
+                justify-content: center;
+            }
             a {
                 text-decoration: none;
+            }
+            img {
+                @media (max-width: 480px) {
+                    width: 30px;
+                    height: 30px;
+                }
             }
         }
     }
