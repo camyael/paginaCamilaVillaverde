@@ -263,3 +263,24 @@ main {
       font-weight: 600;
       margin-bottom: 12px;
       padding-left: 20px; }
+
+main {
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif; }
+  main #nosotros h2 {
+    text-align: center;
+    padding: 20px; }
+  main #nosotros div {
+    background-color: #8ac3b5b2;
+    padding: 30px; }
+    main #nosotros div h3 {
+      font-weight: 600;
+      margin-bottom: 10px; }
+    main #nosotros div p {
+      line-height: normal; }
+      main #nosotros div p a {
+        color: #163b2a;
+        font-weight: 600;
+        text-decoration: none; }
+  main .nosotros_medidas {
+    margin: 20px 85px 70px 85px; }

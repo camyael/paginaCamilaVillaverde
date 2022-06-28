@@ -1,0 +1,31 @@
+@import '../base/base';
+
+main {
+    min-height: 100vh;
+    font-family: $font-general;
+    #nosotros {
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+        div {
+            background-color: #8ac3b5b2;
+            padding: 30px;
+            h3 {
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            p {
+                line-height: normal;
+                a {
+                    color: #163b2a;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .nosotros_medidas {
+        margin: 20px 85px 70px 85px;
+    }
+}
