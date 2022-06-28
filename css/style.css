@@ -284,3 +284,31 @@ main {
         text-decoration: none; }
   main .nosotros_medidas {
     margin: 20px 85px 70px 85px; }
+
+main #contacto {
+  margin: 20px 20px 50px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  main #contacto h2 {
+    text-align: center;
+    padding: 20px; }
+  main #contacto form {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 10px 100px 10px 100px;
+    background-color: #8ac3b5b2;
+    width: 700px;
+    height: auto; }
+    main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+      border: none;
+      border-radius: 20px;
+      text-align: center;
+      padding: 5px 0px; }
+    main #contacto form .botones input {
+      border-radius: 15px;
+      padding: 10px; }
