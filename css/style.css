@@ -261,10 +261,14 @@ main {
         flex-flow: row;
         justify-content: center;
         align-items: center;
-        align-content: center; }
+        align-content: center;
+        padding-left: 0; }
         main #bloques .textoEscondido ul li {
           list-style: none;
           padding: 7px; }
+          @media (max-width: 480px) {
+            main #bloques .textoEscondido ul li {
+              padding: 5px 2px; } }
           main #bloques .textoEscondido ul li img {
             width: 50px;
             height: 50px; }
@@ -276,6 +280,8 @@ main {
               main #bloques .textoEscondido ul li img {
                 width: 30px;
                 height: 30px; } }
+          main #bloques .textoEscondido ul li p {
+            margin-bottom: 0; }
           main #bloques .textoEscondido ul li a {
             font-family: "DM Serif Display", serif;
             color: #2D6A4F;
@@ -558,5 +564,5 @@ main #contacto {
         main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
           font-size: 15px; } }
     main #contacto form .botones input {
-      border-radius: 15px;
+      border-radius: 20px;
       padding: 10px; }
