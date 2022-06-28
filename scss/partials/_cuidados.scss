@@ -5,6 +5,7 @@ main {
     font-family: $font-general;
     #cuidados {
         h2 {
+            margin-bottom: 0;
             text-align: center;
             padding: 50px 100px 20px 100px;
             font-weight: 600;
@@ -13,16 +14,46 @@ main {
         div {
             margin: 5px 70px 10px 70px;
             padding: 5px 150px 20px 150px;
+
+            @media (max-width: 1024px) {
+                margin: 5px 50px 10px 50px;
+                padding: 5px 90px 20px 90px;
+            }
+            @media (max-width: 768px) {
+                margin: 5px 40px 10px 40px;
+                padding: 5px 40px 20px 40px;
+            }
+            @media (max-width: 600px) {
+                padding: 5px 30px 20px 30px;
+            }
+            @media (max-width: 480px) {
+                margin: 0px 15px 10px 15px;
+                padding: 5px 10px 20px 10px;
+            }
+            
+
             p {
                 font-size: 17px;
                 margin-bottom: 40px;
                 font-weight: 400;
                 line-height: normal;
+                @media (max-width: 480px) {
+                    font-size: 15px;
+                }
+                
             }
             h3 {
                 font-weight: 600;
                 margin-bottom: 12px;
                 padding-left: 20px;
+                
+                @media (max-width: 1024px) {
+                    font-size: 23px;
+                }
+                @media (max-width: 768px) {
+                    margin-bottom: 9px;
+                    padding-left: 15px;
+                }
             }
         }
     }

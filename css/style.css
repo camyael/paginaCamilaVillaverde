@@ -413,21 +413,47 @@ main {
   min-height: 100vh;
   font-family: "Josefin Sans", sans-serif; }
   main #cuidados h2 {
+    margin-bottom: 0;
     text-align: center;
     padding: 50px 100px 20px 100px;
     font-weight: 600; }
   main #cuidados div {
     margin: 5px 70px 10px 70px;
     padding: 5px 150px 20px 150px; }
+    @media (max-width: 1024px) {
+      main #cuidados div {
+        margin: 5px 50px 10px 50px;
+        padding: 5px 90px 20px 90px; } }
+    @media (max-width: 768px) {
+      main #cuidados div {
+        margin: 5px 40px 10px 40px;
+        padding: 5px 40px 20px 40px; } }
+    @media (max-width: 600px) {
+      main #cuidados div {
+        padding: 5px 30px 20px 30px; } }
+    @media (max-width: 480px) {
+      main #cuidados div {
+        margin: 0px 15px 10px 15px;
+        padding: 5px 10px 20px 10px; } }
     main #cuidados div p {
       font-size: 17px;
       margin-bottom: 40px;
       font-weight: 400;
       line-height: normal; }
+      @media (max-width: 480px) {
+        main #cuidados div p {
+          font-size: 15px; } }
     main #cuidados div h3 {
       font-weight: 600;
       margin-bottom: 12px;
       padding-left: 20px; }
+      @media (max-width: 1024px) {
+        main #cuidados div h3 {
+          font-size: 23px; } }
+      @media (max-width: 768px) {
+        main #cuidados div h3 {
+          margin-bottom: 9px;
+          padding-left: 15px; } }
 
 main {
   min-height: 100vh;
@@ -438,18 +464,31 @@ main {
   main #nosotros div {
     background-color: #8ac3b5b2;
     padding: 30px; }
+    @media (max-width: 1024px) {
+      main #nosotros div {
+        padding: 30px 40px 50px; } }
+    @media (max-width: 480px) {
+      main #nosotros div {
+        padding: 30px 30px 50px; } }
     main #nosotros div h3 {
       font-weight: 600;
       margin-bottom: 10px; }
     main #nosotros div p {
       font-size: 17px;
-      line-height: normal; }
+      line-height: normal;
+      font-weight: 400px; }
       main #nosotros div p a {
         color: #163b2a;
         font-weight: 600;
         text-decoration: none; }
   main .nosotros_medidas {
     margin: 20px 85px 70px 85px; }
+    @media (max-width: 600px) {
+      main .nosotros_medidas {
+        margin: 20px 40px 70px 40px; } }
+    @media (max-width: 480px) {
+      main .nosotros_medidas {
+        margin: 20px 30px 70px 30px; } }
 
 main #contacto {
   margin: 20px 20px 50px 20px;
