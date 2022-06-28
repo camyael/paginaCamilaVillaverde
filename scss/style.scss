@@ -13,9 +13,14 @@ img {
     max-width: 100%;
 }
 
+main {
+    min-height: 100vh;
+    font-family: $font-general;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@200;300;400;600&display=swap');
-@import 'partials/header';
 @import 'base/base';
+@import 'partials/header';
 @import 'partials/footer';
 @import 'partials/inicio';
 @import 'partials/catalogo';
