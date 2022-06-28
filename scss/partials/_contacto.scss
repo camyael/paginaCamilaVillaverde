@@ -20,7 +20,7 @@ main {
             width: 700px;
             height: auto;
             label, input, textarea, div {
-                font-family: 'Josefin Sans', sans-serif;
+                font-family: $font-general;
                 font-size: 20px;
                 border: none;
                 border-radius: 20px;
