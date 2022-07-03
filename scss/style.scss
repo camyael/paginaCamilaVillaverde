@@ -1,28 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    &:hover {
-        color: black;
-    }
-}
-
-img {
-    max-width: 100%;
-}
-
-main {
-    min-height: 100vh;
-}
-
+// tipografia importada
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@200;300;400;600&display=swap');
-@import 'base/base';
-@import 'partials/header';
-@import 'partials/footer';
-@import 'partials/inicio';
-@import 'partials/catalogo';
-@import 'partials/cuidados';
-@import 'partials/nosotros';
-@import 'partials/contacto'
+
+// reseteo de la página
+@import './base/reset';
+
+// variables, mixins, extends, etc
+@import './base/variables';
+
+// componentes
+@import './partials/header';
+@import './partials/footer';
+@import './partials/inicio';
+@import './partials/catalogo';
+@import './partials/cuidados';
+@import './partials/nosotros';
+@import './partials/contacto'
