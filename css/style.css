@@ -530,6 +530,8 @@ main {
       border-radius: 9px;
       background-color: rgba(156, 202, 179, 0.6);
       padding: 5px 15px; }
+      #bloques-cuidados .bloquescuidados .card button:hover {
+        background-color: rgba(214, 237, 226, 0.727); }
       #bloques-cuidados .bloquescuidados .card button a {
         color: #355947;
         text-decoration: none;
@@ -579,7 +581,7 @@ main {
     padding: 20px; }
   #contacto form {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     padding: 10px 100px 10px 100px;
@@ -601,7 +603,7 @@ main {
         padding: 2px 0px 2px 0px; } }
     #contacto form .row {
       display: flex;
-      flex-flow: row nowrap; }
+      flex-flow: row wrap; }
       @media (max-width: 480px) {
         #contacto form .row {
           flex-direction: column; } }

@@ -120,6 +120,9 @@
                 border-radius: 9px;
                 background-color: rgba(156, 202, 179, 0.6);
                 padding: 5px 15px;
+                &:hover {
+                    background-color: rgba(214, 237, 226, 0.727);
+                }
                 a {
                     color: rgb(53, 89, 71);
                     text-decoration: none;
