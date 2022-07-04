@@ -4,12 +4,11 @@ header {
     z-index: 1;
     h1 {
         text-align: center;
-        background-color: #eafef7;
+        background-color: map-get($colores, colorSecundario);
         font-family: $font-titulo;
         font-size: 35px;
         letter-spacing: 10px;
         padding: 5px;
-        color: #2d6a5f;
         font-weight: bolder;
         margin-bottom: 0;
         line-height: normal;
@@ -20,18 +19,18 @@ header {
 
         a {
             text-decoration: none;
-            color: #2D6A4F;
+            color: map-get($colores, colorLogo);
             padding: 7px;
             font-weight: bolder;
                 &:hover {
-                    color: #2D6A4F;
+                    color: map-get($colores, colorLogo);
                 }
         }
     }
     nav {
         text-align: center;
         padding: 7px;
-        background-color: #8ac3b5;
+        background-color: map-get($colores, colorPrincipal);
         text-transform:  uppercase;
         ul {
             gap: 40px;
@@ -42,7 +41,7 @@ header {
                 font-weight: bolder;
                 a {
                     text-decoration: none;
-                    color: #2D6A4F;
+                    color: map-get($colores, colorLogo);
                     font-weight: bolder;
                 }
             }
@@ -55,7 +54,7 @@ header {
     margin: 0;
     .nav-link {
         text-decoration: none;
-        color: #2D6A4F;
+        color: map-get($colores, colorLogo);
         padding: 7px;
         font-weight: bolder
     }
@@ -67,7 +66,7 @@ header {
             &:hover {
                 background-color: #3a5f4e;
                 border-radius: 3px;
-                color:#8ac3b5;
+                color: map-get($colores, colorPrincipal);
             }
         }
     }

@@ -134,7 +134,7 @@ main {
 
     #bloques {
         @include flex ();
-        background-color: #eafef7;
+        background-color: map-get($colores, colorSecundario);
         justify-content: center;
         padding: 15px 20px;
         position: relative;
@@ -165,7 +165,7 @@ main {
             display: none;
             text-align: center;
             h3 {
-                color: #2D6A4F;
+                color: map-get($colores, colorLogo);
                 margin-bottom: 0;
                 @media screen and (max-width: 768px) {
                     font-size: 20px;
@@ -198,7 +198,7 @@ main {
                     }
                     a {
                         font-family: $font-titulo;
-                        color: #2D6A4F;
+                        color: map-get($colores, colorLogo);
                         text-decoration: none;
                         font-size: 25px;
                         @media screen and (max-width: 768px) {

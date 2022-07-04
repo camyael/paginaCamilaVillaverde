@@ -79,17 +79,23 @@
             box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
             -webkit-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
             -moz-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
+            @media (max-width: 1024px) {
+                justify-self: center;
+            }
 
-            @each $numero, $url in $card {
-                .card-#{$numero} {
-                    background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), $url;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    
-                    @media (max-width: 1024px) {
-                        justify-self: center;
-                    }
-                }
+            &-uno {
+                background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.clarin.com/img/2020/09/21/una-composicion-posible-con-diferentes___MvMjeyVxD_340x340__1.jpg);
+                @extend .card-cuidados;
+            }
+
+            &-dos {
+                background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71,71,71,0.63)), url(https://www.proterra.es/modules/ph_simpleblog/covers/10.jpg);
+                @extend .card-cuidados;
+            }
+
+            &-tres {
+                background-image: linear-gradient(90deg, rgba(71,71,71,0.63), rgba(71,71,71,0.63)), url(https://begreen.imgix.net/60015d29a796f161542575.jpg?w=720&h=780&auto=format);
+                @extend .card-cuidados;
             }
 
             h4 {

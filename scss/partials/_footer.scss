@@ -1,6 +1,6 @@
 footer {
     font-family: $font-general;
-    background-color: #bbe9d9;
+    background-color: map-get($colores, colorSecundario);
     padding: 20px;
     text-align: center;
     @include flex ();

@@ -12,6 +12,10 @@ img {
 main {
   min-height: 100vh; }
 
+.card-cuidados, #bloques-cuidados .bloquescuidados .card-uno, #bloques-cuidados .bloquescuidados .card-dos, #bloques-cuidados .bloquescuidados .card-tres {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 main {
   font-family: "Josefin Sans", sans-serif; }
 
@@ -26,7 +30,6 @@ header {
     font-size: 35px;
     letter-spacing: 10px;
     padding: 5px;
-    color: #2d6a5f;
     font-weight: bolder;
     margin-bottom: 0;
     line-height: normal; }
@@ -73,7 +76,7 @@ header {
 
 footer {
   font-family: "Josefin Sans", sans-serif;
-  background-color: #bbe9d9;
+  background-color: #eafef7;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -498,27 +501,15 @@ main {
     box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
     -webkit-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
     -moz-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75); }
-    #bloques-cuidados .bloquescuidados .card .card-uno {
-      background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.clarin.com/img/2020/09/21/una-composicion-posible-con-diferentes___MvMjeyVxD_340x340__1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; }
-      @media (max-width: 1024px) {
-        #bloques-cuidados .bloquescuidados .card .card-uno {
-          justify-self: center; } }
-    #bloques-cuidados .bloquescuidados .card .card-dos {
-      background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.proterra.es/modules/ph_simpleblog/covers/10.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; }
-      @media (max-width: 1024px) {
-        #bloques-cuidados .bloquescuidados .card .card-dos {
-          justify-self: center; } }
-    #bloques-cuidados .bloquescuidados .card .card-tres {
-      background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://begreen.imgix.net/60015d29a796f161542575.jpg?w=720&h=780&auto=format);
-      background-repeat: no-repeat;
-      background-size: cover; }
-      @media (max-width: 1024px) {
-        #bloques-cuidados .bloquescuidados .card .card-tres {
-          justify-self: center; } }
+    @media (max-width: 1024px) {
+      #bloques-cuidados .bloquescuidados .card {
+        justify-self: center; } }
+    #bloques-cuidados .bloquescuidados .card-uno {
+      background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.clarin.com/img/2020/09/21/una-composicion-posible-con-diferentes___MvMjeyVxD_340x340__1.jpg); }
+    #bloques-cuidados .bloquescuidados .card-dos {
+      background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.proterra.es/modules/ph_simpleblog/covers/10.jpg); }
+    #bloques-cuidados .bloquescuidados .card-tres {
+      background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://begreen.imgix.net/60015d29a796f161542575.jpg?w=720&h=780&auto=format); }
     #bloques-cuidados .bloquescuidados .card h4 {
       font-size: 19px;
       font-weight: 600; }
