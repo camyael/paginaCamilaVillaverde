@@ -1,69 +1,63 @@
-main {
-    #contacto {
-        margin: 20px 20px 50px 20px;
-        display: flex;
-        flex-flow: column nowrap;
+#contacto {
+    margin: 20px 20px 50px 20px;
+    @include flex (column, nowrap);
+    align-items: center;
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    form {
+        @include flex (column, nowrap);
         align-items: center;
-        h2 {
-            text-align: center;
-            padding: 20px;
-        }
-        form {
-            display: flex;
-            align-items: center;
-            flex-flow: column nowrap;
-            justify-content: center;
-            padding: 10px 100px 10px 100px;
-            background-color: #8ac3b5b2;
-            width: 700px;
-            height: auto;
+        justify-content: center;
+        padding: 10px 100px 10px 100px;
+        background-color: #8ac3b5b2;
+        @include tamaños (700px, auto);
 
-            @media (max-width: 768px) {
+        @media (max-width: 768px) {
+            padding: 10px;
+            width: 550px;
+        }
+        @media (max-width: 600px) {
+            width: 450px;
+        }
+        @media (max-width: 480px) {
+            width: 320px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 2px 0px 2px 0px;
+        }
+
+        .row {
+            @include flex (row, nowrap);
+            @media (max-width: 480px) {
+                flex-direction: column;
+            }
+        }
+
+        label, input, textarea, div {
+            font-family: $font-general;
+            font-size: 20px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px 0px;
+
+            @media (max-width: 1024px) {
                 padding: 10px;
-                width: 550px;
             }
             @media (max-width: 600px) {
-                width: 450px;
+                padding: 5px;
+                font-size: 17px;
             }
-            @media (max-width: 480px) {
-                width: 320px;
-                margin-left: 0;
-                margin-right: 0;
-                padding: 2px 0px 2px 0px;
+            @media (max-width: 600px) {
+                font-size: 15px;
             }
-
-            .row {
-                display: flex;
-                flex-flow: row nowrap;
-                @media (max-width: 480px) {
-                    flex-direction: column;
-                }
-            }
-
-            label, input, textarea, div {
-                font-family: $font-general;
-                font-size: 20px;
-                border: none;
+        }
+        .botones {
+            input {
                 border-radius: 20px;
-                text-align: center;
-                padding: 5px 0px;
-
-                @media (max-width: 1024px) {
-                    padding: 10px;
-                }
-                @media (max-width: 600px) {
-                    padding: 5px;
-                    font-size: 17px;
-                }
-                @media (max-width: 600px) {
-                    font-size: 15px;
-                }
-            }
-            .botones {
-                input {
-                    border-radius: 20px;
-                    padding: 10px;
-                }
+                padding: 10px;
             }
         }
     }

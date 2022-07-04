@@ -12,9 +12,13 @@ img {
 main {
   min-height: 100vh; }
 
+main {
+  font-family: "Josefin Sans", sans-serif; }
+
 header {
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
   header h1 {
     text-align: center;
     background-color: #eafef7;
@@ -127,13 +131,13 @@ main {
       font-family: "Josefin Sans", sans-serif; }
       main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
         justify-content: center;
         background-color: #66a09173;
         margin-left: 0px;
         border-radius: 10px;
-        height: 300px;
         width: 500px;
+        height: 300px;
         padding: 0px 10px;
         line-height: normal; }
         @media screen and (max-width: 1024px) {
@@ -146,8 +150,8 @@ main {
             height: 230px; } }
         @media screen and (max-width: 600px) {
           main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
-            height: 200px;
-            width: 400px; } }
+            width: 400px;
+            height: 200px; } }
         @media screen and (max-width: 480px) {
           main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
             width: 300px;
@@ -258,7 +262,7 @@ main {
             font-size: 17px; } }
       main #bloques .textoEscondido ul {
         display: flex;
-        flex-flow: row;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -273,10 +277,6 @@ main {
             width: 50px;
             height: 50px; }
             @media screen and (max-width: 768px) {
-              main #bloques .textoEscondido ul li img {
-                width: 30px;
-                height: 30px; } }
-            @media screen and (max-width: 480px) {
               main #bloques .textoEscondido ul li img {
                 width: 30px;
                 height: 30px; } }
@@ -397,222 +397,224 @@ main {
   main .separadorPrincipal {
     width: 100%; }
 
-main {
-  min-height: 100vh;
-  font-family: "Josefin Sans", sans-serif; }
-  main #catalogo h2 {
-    text-align: center;
-    padding: 40px;
-    margin-bottom: 20px; }
-  main #catalogo .catalogodiv {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
-    main #catalogo .catalogodiv figure {
-      text-align: center;
-      padding: 0px 20px;
-      margin-bottom: 55px; }
-      main #catalogo .catalogodiv figure img {
-        width: 200px;
-        height: 300px;
-        border-radius: 15px; }
-      main #catalogo .catalogodiv figure:hover {
-        transform: scale(1.3);
-        transition-duration: 0.7s; }
-        @media screen and (max-width: 600px) {
-          main #catalogo .catalogodiv figure:hover {
-            transform: scale(1.1); } }
-      main #catalogo .catalogodiv figure .productosdimensiones {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 0.5rem; }
-      main #catalogo .catalogodiv figure figcaption {
-        font-weight: bolder; }
+#catalogo h2 {
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 20px; }
 
-main {
-  min-height: 100vh;
-  font-family: "Josefin Sans", sans-serif; }
-  main #cuidados h2 {
-    margin-bottom: 0;
+#catalogo .catalogodiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  #catalogo .catalogodiv figure {
     text-align: center;
-    padding: 50px 100px 20px 100px;
-    font-weight: 600; }
-  main #cuidados div {
-    margin: 5px 50px 10px 50px;
-    padding: 5px 150px 20px 150px; }
-    @media (max-width: 1024px) {
-      main #cuidados div {
-        margin: 5px 50px 10px 50px;
-        padding: 5px 90px 20px 90px; } }
-    @media (max-width: 768px) {
-      main #cuidados div {
-        margin: 5px 40px 10px 40px;
-        padding: 5px 40px 20px 40px; } }
-    @media (max-width: 600px) {
-      main #cuidados div {
-        padding: 5px 30px 20px 30px; } }
-    @media (max-width: 480px) {
-      main #cuidados div {
-        margin: 0px 15px 10px 15px;
-        padding: 5px 10px 20px 10px; } }
-    main #cuidados div p {
-      font-size: 17px;
-      margin-bottom: 40px;
-      font-weight: 400;
-      line-height: normal; }
-      @media (max-width: 480px) {
-        main #cuidados div p {
-          font-size: 15px; } }
-    main #cuidados div h3 {
-      font-weight: 600;
-      margin-bottom: 12px;
-      padding-left: 20px; }
-      @media (max-width: 1024px) {
-        main #cuidados div h3 {
-          font-size: 23px; } }
-      @media (max-width: 768px) {
-        main #cuidados div h3 {
-          margin-bottom: 9px;
-          padding-left: 15px; } }
-  main #bloques-cuidados .bloquescuidados {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 30px; }
-    @media (max-width: 1024px) {
-      main #bloques-cuidados .bloquescuidados {
-        display: flex;
-        flex-flow: row wrap; } }
-    main #bloques-cuidados .bloquescuidados .card {
+    padding: 0px 20px;
+    margin-bottom: 55px; }
+    #catalogo .catalogodiv figure img {
+      width: 200px;
+      height: 300px;
+      border-radius: 15px; }
+    #catalogo .catalogodiv figure:hover {
+      transform: scale(1.3);
+      transition-duration: 0.7s; }
+      @media screen and (max-width: 600px) {
+        #catalogo .catalogodiv figure:hover {
+          transform: scale(1.1); } }
+    #catalogo .catalogodiv figure .productosdimensiones {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      border-radius: 13px;
-      width: 300px;
-      height: 300px;
-      margin-right: 0;
-      text-align: center;
-      color: whitesmoke;
-      box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
-      -webkit-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
-      -moz-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75); }
-      main #bloques-cuidados .bloquescuidados .card h4 {
-        font-size: 19px;
-        font-weight: 600; }
-      main #bloques-cuidados .bloquescuidados .card p {
-        font-size: 17.5px;
-        padding: 5px; }
-      @media (max-width: 1024px) {
-        main #bloques-cuidados .bloquescuidados .card {
-          width: 230px;
-          height: 230px; } }
-      @media (max-width: 768px) {
-        main #bloques-cuidados .bloquescuidados .card {
-          width: 200px;
-          height: 200px;
-          margin-bottom: 20px; } }
-      main #bloques-cuidados .bloquescuidados .card button {
-        border: 2px solid whitesmoke;
-        border-radius: 9px;
-        background-color: rgba(156, 202, 179, 0.6);
-        padding: 5px 15px; }
-        main #bloques-cuidados .bloquescuidados .card button a {
-          color: #355947;
-          text-decoration: none;
-          text-transform: uppercase; }
-    main #bloques-cuidados .bloquescuidados .card-uno {
+      gap: 0.5rem; }
+    #catalogo .catalogodiv figure figcaption {
+      font-weight: bolder; }
+
+#cuidados h2 {
+  margin-bottom: 0;
+  text-align: center;
+  padding: 50px 100px 20px 100px;
+  font-weight: 600; }
+
+#cuidados div {
+  margin: 5px 50px 10px 50px;
+  padding: 5px 150px 20px 150px; }
+  @media (max-width: 1024px) {
+    #cuidados div {
+      margin: 5px 50px 10px 50px;
+      padding: 5px 90px 20px 90px; } }
+  @media (max-width: 768px) {
+    #cuidados div {
+      margin: 5px 40px 10px 40px;
+      padding: 5px 40px 20px 40px; } }
+  @media (max-width: 600px) {
+    #cuidados div {
+      padding: 5px 30px 20px 30px; } }
+  @media (max-width: 480px) {
+    #cuidados div {
+      margin: 0px 15px 10px 15px;
+      padding: 5px 10px 20px 10px; } }
+  #cuidados div p {
+    font-size: 17px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: normal; }
+    @media (max-width: 480px) {
+      #cuidados div p {
+        font-size: 15px; } }
+  #cuidados div h3 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-left: 20px; }
+    @media (max-width: 1024px) {
+      #cuidados div h3 {
+        font-size: 23px; } }
+    @media (max-width: 768px) {
+      #cuidados div h3 {
+        margin-bottom: 9px;
+        padding-left: 15px; } }
+
+#bloques-cuidados .bloquescuidados {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  @media (max-width: 1024px) {
+    #bloques-cuidados .bloquescuidados {
+      display: flex;
+      flex-flow: row wrap; } }
+  #bloques-cuidados .bloquescuidados .card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    width: 300px;
+    height: 300px;
+    margin-right: 0;
+    text-align: center;
+    color: whitesmoke;
+    box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
+    -webkit-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75);
+    -moz-box-shadow: 2px 1px 29px 7px rgba(57, 83, 73, 0.75); }
+    #bloques-cuidados .bloquescuidados .card .card-uno {
       background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.clarin.com/img/2020/09/21/una-composicion-posible-con-diferentes___MvMjeyVxD_340x340__1.jpg);
       background-repeat: no-repeat;
       background-size: cover; }
-    main #bloques-cuidados .bloquescuidados .card-dos {
+      @media (max-width: 1024px) {
+        #bloques-cuidados .bloquescuidados .card .card-uno {
+          justify-self: center; } }
+    #bloques-cuidados .bloquescuidados .card .card-dos {
       background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://www.proterra.es/modules/ph_simpleblog/covers/10.jpg);
       background-repeat: no-repeat;
       background-size: cover; }
-    main #bloques-cuidados .bloquescuidados .card-tres {
+      @media (max-width: 1024px) {
+        #bloques-cuidados .bloquescuidados .card .card-dos {
+          justify-self: center; } }
+    #bloques-cuidados .bloquescuidados .card .card-tres {
       background-image: linear-gradient(90deg, rgba(71, 71, 71, 0.63), rgba(71, 71, 71, 0.63)), url(https://begreen.imgix.net/60015d29a796f161542575.jpg?w=720&h=780&auto=format);
       background-repeat: no-repeat;
       background-size: cover; }
       @media (max-width: 1024px) {
-        main #bloques-cuidados .bloquescuidados .card-tres {
+        #bloques-cuidados .bloquescuidados .card .card-tres {
           justify-self: center; } }
-
-main {
-  min-height: 100vh;
-  font-family: "Josefin Sans", sans-serif; }
-  main #nosotros h2 {
-    text-align: center;
-    padding: 20px; }
-  main #nosotros div {
-    background-color: #8ac3b5b2;
-    padding: 30px; }
+    #bloques-cuidados .bloquescuidados .card h4 {
+      font-size: 19px;
+      font-weight: 600; }
+    #bloques-cuidados .bloquescuidados .card p {
+      font-size: 17.5px;
+      padding: 5px; }
     @media (max-width: 1024px) {
-      main #nosotros div {
-        padding: 30px 40px 50px; } }
-    @media (max-width: 480px) {
-      main #nosotros div {
-        padding: 30px 30px 50px; } }
-    main #nosotros div h3 {
-      font-weight: 600;
-      margin-bottom: 10px; }
-    main #nosotros div p {
-      font-size: 17px;
-      line-height: normal;
-      font-weight: 400px; }
-      main #nosotros div p a {
-        color: #163b2a;
-        font-weight: 600;
-        text-decoration: none; }
-  main .nosotros_medidas {
-    margin: 20px 85px 70px 85px; }
-    @media (max-width: 600px) {
-      main .nosotros_medidas {
-        margin: 20px 40px 70px 40px; } }
-    @media (max-width: 480px) {
-      main .nosotros_medidas {
-        margin: 20px 30px 70px 30px; } }
+      #bloques-cuidados .bloquescuidados .card {
+        width: 230px;
+        height: 230px; } }
+    @media (max-width: 768px) {
+      #bloques-cuidados .bloquescuidados .card {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px; } }
+    #bloques-cuidados .bloquescuidados .card button {
+      border: 2px solid whitesmoke;
+      border-radius: 9px;
+      background-color: rgba(156, 202, 179, 0.6);
+      padding: 5px 15px; }
+      #bloques-cuidados .bloquescuidados .card button a {
+        color: #355947;
+        text-decoration: none;
+        text-transform: uppercase; }
 
-main #contacto {
+#nosotros h2 {
+  text-align: center;
+  padding: 20px; }
+
+#nosotros div {
+  background-color: #8ac3b5b2;
+  padding: 30px; }
+  @media (max-width: 1024px) {
+    #nosotros div {
+      padding: 30px 40px 50px; } }
+  @media (max-width: 480px) {
+    #nosotros div {
+      padding: 30px 30px 50px; } }
+  #nosotros div h3 {
+    font-weight: 600;
+    margin-bottom: 10px; }
+  #nosotros div p {
+    font-size: 17px;
+    line-height: normal;
+    font-weight: 400px; }
+    #nosotros div p a {
+      color: #163b2a;
+      font-weight: 600;
+      text-decoration: none; }
+
+.nosotros_medidas {
+  margin: 20px 85px 70px 85px; }
+  @media (max-width: 600px) {
+    .nosotros_medidas {
+      margin: 20px 40px 70px 40px; } }
+  @media (max-width: 480px) {
+    .nosotros_medidas {
+      margin: 20px 30px 70px 30px; } }
+
+#contacto {
   margin: 20px 20px 50px 20px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center; }
-  main #contacto h2 {
+  #contacto h2 {
     text-align: center;
     padding: 20px; }
-  main #contacto form {
+  #contacto form {
     display: flex;
-    align-items: center;
     flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
     padding: 10px 100px 10px 100px;
     background-color: #8ac3b5b2;
     width: 700px;
     height: auto; }
     @media (max-width: 768px) {
-      main #contacto form {
+      #contacto form {
         padding: 10px;
         width: 550px; } }
     @media (max-width: 600px) {
-      main #contacto form {
+      #contacto form {
         width: 450px; } }
     @media (max-width: 480px) {
-      main #contacto form {
+      #contacto form {
         width: 320px;
         margin-left: 0;
         margin-right: 0;
         padding: 2px 0px 2px 0px; } }
-    main #contacto form .row {
+    #contacto form .row {
       display: flex;
       flex-flow: row nowrap; }
       @media (max-width: 480px) {
-        main #contacto form .row {
+        #contacto form .row {
           flex-direction: column; } }
-    main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+    #contacto form label, #contacto form input, #contacto form textarea, #contacto form div {
       font-family: "Josefin Sans", sans-serif;
       font-size: 20px;
       border: none;
@@ -620,15 +622,15 @@ main #contacto {
       text-align: center;
       padding: 5px 0px; }
       @media (max-width: 1024px) {
-        main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+        #contacto form label, #contacto form input, #contacto form textarea, #contacto form div {
           padding: 10px; } }
       @media (max-width: 600px) {
-        main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+        #contacto form label, #contacto form input, #contacto form textarea, #contacto form div {
           padding: 5px;
           font-size: 17px; } }
       @media (max-width: 600px) {
-        main #contacto form label, main #contacto form input, main #contacto form textarea, main #contacto form div {
+        #contacto form label, #contacto form input, #contacto form textarea, #contacto form div {
           font-size: 15px; } }
-    main #contacto form .botones input {
+    #contacto form .botones input {
       border-radius: 20px;
       padding: 10px; }

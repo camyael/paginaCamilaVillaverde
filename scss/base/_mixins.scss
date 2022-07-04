@@ -1,0 +1,11 @@
+// display
+@mixin flex ($direction: row, $wrap: wrap) {
+    display: flex;
+    flex-flow: $direction $wrap;
+}
+
+// tamaños
+@mixin tamaños ($width, $height) {
+    width: $width;
+    height: $height;
+}
