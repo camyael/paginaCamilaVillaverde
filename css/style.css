@@ -1,8 +1,15 @@
+/* tipografia importada */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@200;300;400;600&display=swap");
+/* RESET */
 * {
   margin: 0;
   padding: 0; }
 
+.card-cuidados, #bloques-cuidados .bloquescuidados .card-uno, #bloques-cuidados .bloquescuidados .card-dos, #bloques-cuidados .bloquescuidados .card-tres {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* RESETEO GENERAL */
 a:hover {
   color: black; }
 
@@ -10,13 +17,7 @@ img {
   max-width: 100%; }
 
 main {
-  min-height: 100vh; }
-
-.card-cuidados, #bloques-cuidados .bloquescuidados .card-uno, #bloques-cuidados .bloquescuidados .card-dos, #bloques-cuidados .bloquescuidados .card-tres {
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-main {
+  min-height: 100vh;
   font-family: "Josefin Sans", sans-serif; }
 
 header {
@@ -112,293 +113,294 @@ footer {
           width: 30px;
           height: 30px; } }
 
-main {
-  font-family: "Josefin Sans", sans-serif; }
-  main #sectionPrincipal {
-    background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 90vh;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center; }
-    @media screen and (max-width: 768px) {
-      main #sectionPrincipal {
-        flex-flow: column nowrap; } }
-    main #sectionPrincipal .principal_plantadelmes {
-      text-align: center;
-      font-size: 20px;
-      font-weight: 400;
-      font-family: "Josefin Sans", sans-serif; }
-      main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        background-color: #66a09173;
-        margin-left: 0px;
-        border-radius: 10px;
-        width: 500px;
-        height: 300px;
-        padding: 0px 10px;
-        line-height: normal; }
-        @media screen and (max-width: 1024px) {
-          main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
-            width: 450px;
-            padding: 0px 20px; } }
-        @media screen and (max-width: 768px) {
-          main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
-            background-color: #ddfff08a;
-            height: 230px; } }
-        @media screen and (max-width: 600px) {
-          main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
-            width: 400px;
-            height: 200px; } }
-        @media screen and (max-width: 480px) {
-          main #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
-            width: 300px;
-            height: 280px;
-            padding: 0px 15px; } }
-        main #sectionPrincipal .principal_plantadelmes .plantadelmes_info:hover {
-          background-color: #ddfff08a;
-          border-radius: 40px; }
-        main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
-          margin-bottom: 0; }
-          @media screen and (max-width: 1024px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
-              font-size: 30px; } }
-          @media screen and (max-width: 768px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
-              font-size: 27px; } }
-          @media screen and (max-width: 600px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
-              font-size: 25px; } }
-          @media screen and (max-width: 480px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
-              font-size: 20px; } }
-        main #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
-          margin-bottom: 0; }
-          @media screen and (max-width: 1024px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
-              font-size: 17px; } }
-          @media screen and (max-width: 768px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
-              font-size: 15.5px; } }
-          @media screen and (max-width: 600px) {
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
-              font-size: 14px; } }
-        main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 {
-          text-align: center;
-          font-size: 20px;
-          padding-top: 10px;
-          margin-bottom: 0; }
-          main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
-            text-decoration: none;
-            color: black; }
-            @media screen and (max-width: 768px) {
-              main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
-                color: #33674a; } }
-            @media screen and (max-width: 480px) {
-              main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
-                font-size: 16px; } }
-            main #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a:hover {
-              color: rgba(8, 57, 29, 0.487); }
-    main #sectionPrincipal .principal_producto {
-      text-align: center;
-      margin-left: -12px; }
-      @media screen and (max-width: 1024px) {
-        main #sectionPrincipal .principal_producto {
-          margin-left: -20px; } }
-      @media screen and (max-width: 768px) {
-        main #sectionPrincipal .principal_producto {
-          margin-left: 0px;
-          margin-top: 10px; } }
-      main #sectionPrincipal .principal_producto img {
-        border-radius: 70%;
-        box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45);
-        -webkit-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45);
-        -moz-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45); }
-        @media screen and (max-width: 1024px) {
-          main #sectionPrincipal .principal_producto img {
-            width: 300px;
-            height: 320px; } }
-        @media screen and (max-width: 768px) {
-          main #sectionPrincipal .principal_producto img {
-            width: 250px;
-            height: 270px; } }
-  main #bloques {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #eafef7;
-    justify-content: center;
-    padding: 15px 20px;
-    position: relative; }
-    main #bloques:hover .textoEscondido {
-      display: block;
-      position: absolute;
-      top: 100px; }
-      @media screen and (max-width: 768px) {
-        main #bloques:hover .textoEscondido {
-          top: 70px; } }
-    main #bloques:hover .bloque1 {
-      transform: translateX(-60%); }
-      @media screen and (max-width: 768px) {
-        main #bloques:hover .bloque1 {
-          transform: translateX(-70%); } }
-    main #bloques:hover .bloque2 {
-      transform: translateX(60%); }
-      @media screen and (max-width: 768px) {
-        main #bloques:hover .bloque2 {
-          transform: translateX(70%); } }
-    main #bloques .textoEscondido {
-      display: none;
-      text-align: center; }
-      main #bloques .textoEscondido h3 {
-        color: #2D6A4F;
-        margin-bottom: 0; }
-        @media screen and (max-width: 768px) {
-          main #bloques .textoEscondido h3 {
-            font-size: 20px; } }
-        @media screen and (max-width: 600px) {
-          main #bloques .textoEscondido h3 {
-            font-size: 17px; } }
-      main #bloques .textoEscondido ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding-left: 0; }
-        main #bloques .textoEscondido ul li {
-          list-style: none;
-          padding: 7px; }
-          @media (max-width: 480px) {
-            main #bloques .textoEscondido ul li {
-              padding: 5px 2px; } }
-          main #bloques .textoEscondido ul li img {
-            width: 50px;
-            height: 50px; }
-            @media screen and (max-width: 768px) {
-              main #bloques .textoEscondido ul li img {
-                width: 30px;
-                height: 30px; } }
-          main #bloques .textoEscondido ul li p {
-            margin-bottom: 0; }
-          main #bloques .textoEscondido ul li a {
-            font-family: "DM Serif Display", serif;
-            color: #2D6A4F;
-            text-decoration: none;
-            font-size: 25px; }
-            @media screen and (max-width: 768px) {
-              main #bloques .textoEscondido ul li a {
-                font-size: 17px; } }
-            @media screen and (max-width: 600px) {
-              main #bloques .textoEscondido ul li a {
-                font-size: 15px; } }
-    main #bloques .bloque1 {
-      transition: all 2s ease-in; }
-      main #bloques .bloque1 img {
-        width: 300px;
-        height: 300px;
-        border: 7px solid #daebe5;
-        border-radius: 50%; }
-        @media screen and (max-width: 1024px) {
-          main #bloques .bloque1 img {
-            width: 250px;
-            height: 250px; } }
-        @media screen and (max-width: 768px) {
-          main #bloques .bloque1 img {
-            width: 170px;
-            height: 170px;
-            border: 5px solid #daebe5; } }
-        @media screen and (max-width: 600px) {
-          main #bloques .bloque1 img {
-            width: 150px;
-            height: 150px; } }
-    main #bloques .bloque2 {
-      margin-left: -80px;
-      transition: all 2s ease-in; }
-      @media screen and (max-width: 768px) {
-        main #bloques .bloque2 {
-          margin-left: -40px; } }
-      @media screen and (max-width: 480px) {
-        main #bloques .bloque2 {
-          margin-left: -30px; } }
-      main #bloques .bloque2 img {
-        width: 300px;
-        height: 300px;
-        border: 7px solid #daebe5;
-        border-radius: 50%; }
-        @media screen and (max-width: 1024px) {
-          main #bloques .bloque2 img {
-            width: 250px;
-            height: 250px; } }
-        @media screen and (max-width: 768px) {
-          main #bloques .bloque2 img {
-            width: 170px;
-            height: 170px;
-            border: 5px solid #daebe5; } }
-        @media screen and (max-width: 600px) {
-          main #bloques .bloque2 img {
-            width: 150px;
-            height: 150px; } }
-  main .secundaria #sectionSecundaria {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    text-align: end;
-    margin: 60px 20px;
-    height: 250px;
-    padding: 0px 150px; }
-    @media screen and (max-width: 1024px) {
-      main .secundaria #sectionSecundaria {
-        padding: 0px 80px; } }
-    @media screen and (max-width: 768px) {
-      main .secundaria #sectionSecundaria {
-        padding: 0px 50px;
-        margin: 30px 10px; } }
-    @media screen and (max-width: 600px) {
-      main .secundaria #sectionSecundaria {
-        padding: 0px 20px; } }
-    @media screen and (max-width: 480px) {
-      main .secundaria #sectionSecundaria {
-        padding: 0px 8px;
-        margin: 15px 8px; } }
-    main .secundaria #sectionSecundaria h2 {
-      margin-bottom: 0; }
-      @media screen and (max-width: 1024px) {
-        main .secundaria #sectionSecundaria h2 {
-          font-size: 30px; } }
-      @media screen and (max-width: 768px) {
-        main .secundaria #sectionSecundaria h2 {
-          font-size: 25px; } }
-      @media screen and (max-width: 480px) {
-        main .secundaria #sectionSecundaria h2 {
-          font-size: 20px; } }
-    main .secundaria #sectionSecundaria p {
-      padding-top: 15px;
-      margin: 0;
-      font-weight: 400;
-      font-size: 18px;
+#sectionPrincipal {
+  background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    #sectionPrincipal {
+      flex-flow: column nowrap; } }
+  #sectionPrincipal .principal_plantadelmes {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif; }
+    #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      background-color: #66a09173;
+      margin-left: 0px;
+      border-radius: 10px;
+      width: 500px;
+      height: 300px;
+      padding: 0px 10px;
       line-height: normal; }
+      @media screen and (max-width: 1024px) {
+        #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
+          width: 450px;
+          padding: 0px 20px; } }
       @media screen and (max-width: 768px) {
-        main .secundaria #sectionSecundaria p {
-          font-size: 15px;
-          padding-top: 10px; } }
+        #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
+          background-color: #ddfff08a;
+          height: 230px; } }
+      @media screen and (max-width: 600px) {
+        #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
+          width: 400px;
+          height: 200px; } }
       @media screen and (max-width: 480px) {
-        main .secundaria #sectionSecundaria p {
-          font-size: 13px;
-          padding-top: 7px; } }
-      main .secundaria #sectionSecundaria p a {
-        text-decoration: none;
-        color: #163b2a;
-        font-weight: 600; }
-        main .secundaria #sectionSecundaria p a:hover {
-          color: #5da384;
-          text-decoration: underline; }
-  main .separadorPrincipal {
-    width: 100%; }
+        #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
+          width: 300px;
+          height: 280px;
+          padding: 0px 15px; } }
+      #sectionPrincipal .principal_plantadelmes .plantadelmes_info:hover {
+        background-color: #ddfff08a;
+        border-radius: 40px; }
+      #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
+        margin-bottom: 0; }
+        @media screen and (max-width: 1024px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
+            font-size: 30px; } }
+        @media screen and (max-width: 768px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
+            font-size: 27px; } }
+        @media screen and (max-width: 600px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
+            font-size: 25px; } }
+        @media screen and (max-width: 480px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info h2 {
+            font-size: 20px; } }
+      #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
+        margin-bottom: 0; }
+        @media screen and (max-width: 1024px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
+            font-size: 17px; } }
+        @media screen and (max-width: 768px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
+            font-size: 15.5px; } }
+        @media screen and (max-width: 600px) {
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info p {
+            font-size: 14px; } }
+      #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+        margin-bottom: 0; }
+        #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
+          text-decoration: none;
+          color: black; }
+          @media screen and (max-width: 768px) {
+            #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
+              color: #33674a; } }
+          @media screen and (max-width: 480px) {
+            #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a {
+              font-size: 16px; } }
+          #sectionPrincipal .principal_plantadelmes .plantadelmes_info h3 a:hover {
+            color: rgba(8, 57, 29, 0.487); }
+  #sectionPrincipal .principal_producto {
+    text-align: center;
+    margin-left: -12px; }
+    @media screen and (max-width: 1024px) {
+      #sectionPrincipal .principal_producto {
+        margin-left: -20px; } }
+    @media screen and (max-width: 768px) {
+      #sectionPrincipal .principal_producto {
+        margin-left: 0px;
+        margin-top: 10px; } }
+    #sectionPrincipal .principal_producto img {
+      border-radius: 70%;
+      box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45);
+      -webkit-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45);
+      -moz-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.45); }
+      @media screen and (max-width: 1024px) {
+        #sectionPrincipal .principal_producto img {
+          width: 300px;
+          height: 320px; } }
+      @media screen and (max-width: 768px) {
+        #sectionPrincipal .principal_producto img {
+          width: 250px;
+          height: 270px; } }
+
+#bloques {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #eafef7;
+  justify-content: center;
+  padding: 15px 20px;
+  position: relative; }
+  #bloques:hover .textoEscondido {
+    display: block;
+    position: absolute;
+    top: 100px; }
+    @media screen and (max-width: 768px) {
+      #bloques:hover .textoEscondido {
+        top: 70px; } }
+  #bloques:hover .bloque1 {
+    transform: translateX(-60%); }
+    @media screen and (max-width: 768px) {
+      #bloques:hover .bloque1 {
+        transform: translateX(-70%); } }
+  #bloques:hover .bloque2 {
+    transform: translateX(60%); }
+    @media screen and (max-width: 768px) {
+      #bloques:hover .bloque2 {
+        transform: translateX(70%); } }
+  #bloques .textoEscondido {
+    display: none;
+    text-align: center; }
+    #bloques .textoEscondido h3 {
+      color: #2D6A4F;
+      margin-bottom: 0; }
+      @media screen and (max-width: 768px) {
+        #bloques .textoEscondido h3 {
+          font-size: 20px; } }
+      @media screen and (max-width: 600px) {
+        #bloques .textoEscondido h3 {
+          font-size: 17px; } }
+    #bloques .textoEscondido ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding-left: 0; }
+      #bloques .textoEscondido ul li {
+        list-style: none;
+        padding: 7px; }
+        @media (max-width: 480px) {
+          #bloques .textoEscondido ul li {
+            padding: 5px 2px; } }
+        #bloques .textoEscondido ul li img {
+          width: 50px;
+          height: 50px; }
+          @media screen and (max-width: 768px) {
+            #bloques .textoEscondido ul li img {
+              width: 30px;
+              height: 30px; } }
+        #bloques .textoEscondido ul li p {
+          margin-bottom: 0; }
+        #bloques .textoEscondido ul li a {
+          font-family: "DM Serif Display", serif;
+          color: #2D6A4F;
+          text-decoration: none;
+          font-size: 25px; }
+          @media screen and (max-width: 768px) {
+            #bloques .textoEscondido ul li a {
+              font-size: 17px; } }
+          @media screen and (max-width: 600px) {
+            #bloques .textoEscondido ul li a {
+              font-size: 15px; } }
+  #bloques .bloque1 {
+    transition: all 2s ease-in; }
+    #bloques .bloque1 img {
+      width: 300px;
+      height: 300px;
+      border: 7px solid #daebe5;
+      border-radius: 50%; }
+      @media screen and (max-width: 1024px) {
+        #bloques .bloque1 img {
+          width: 250px;
+          height: 250px; } }
+      @media screen and (max-width: 768px) {
+        #bloques .bloque1 img {
+          width: 170px;
+          height: 170px;
+          border: 5px solid #daebe5; } }
+      @media screen and (max-width: 600px) {
+        #bloques .bloque1 img {
+          width: 150px;
+          height: 150px; } }
+  #bloques .bloque2 {
+    margin-left: -80px;
+    transition: all 2s ease-in; }
+    @media screen and (max-width: 768px) {
+      #bloques .bloque2 {
+        margin-left: -40px; } }
+    @media screen and (max-width: 480px) {
+      #bloques .bloque2 {
+        margin-left: -30px; } }
+    #bloques .bloque2 img {
+      width: 300px;
+      height: 300px;
+      border: 7px solid #daebe5;
+      border-radius: 50%; }
+      @media screen and (max-width: 1024px) {
+        #bloques .bloque2 img {
+          width: 250px;
+          height: 250px; } }
+      @media screen and (max-width: 768px) {
+        #bloques .bloque2 img {
+          width: 170px;
+          height: 170px;
+          border: 5px solid #daebe5; } }
+      @media screen and (max-width: 600px) {
+        #bloques .bloque2 img {
+          width: 150px;
+          height: 150px; } }
+
+.secundaria #sectionSecundaria {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: end;
+  margin: 60px 20px;
+  height: 250px;
+  padding: 0px 150px; }
+  @media screen and (max-width: 1024px) {
+    .secundaria #sectionSecundaria {
+      padding: 0px 80px; } }
+  @media screen and (max-width: 768px) {
+    .secundaria #sectionSecundaria {
+      padding: 0px 50px;
+      margin: 30px 10px; } }
+  @media screen and (max-width: 600px) {
+    .secundaria #sectionSecundaria {
+      padding: 0px 20px; } }
+  @media screen and (max-width: 480px) {
+    .secundaria #sectionSecundaria {
+      padding: 0px 8px;
+      margin: 15px 8px; } }
+  .secundaria #sectionSecundaria h2 {
+    margin-bottom: 0; }
+    @media screen and (max-width: 1024px) {
+      .secundaria #sectionSecundaria h2 {
+        font-size: 30px; } }
+    @media screen and (max-width: 768px) {
+      .secundaria #sectionSecundaria h2 {
+        font-size: 25px; } }
+    @media screen and (max-width: 480px) {
+      .secundaria #sectionSecundaria h2 {
+        font-size: 20px; } }
+  .secundaria #sectionSecundaria p {
+    padding-top: 15px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal; }
+    @media screen and (max-width: 768px) {
+      .secundaria #sectionSecundaria p {
+        font-size: 15px;
+        padding-top: 10px; } }
+    @media screen and (max-width: 480px) {
+      .secundaria #sectionSecundaria p {
+        font-size: 13px;
+        padding-top: 7px; } }
+    .secundaria #sectionSecundaria p a {
+      text-decoration: none;
+      color: #163b2a;
+      font-weight: 600; }
+      .secundaria #sectionSecundaria p a:hover {
+        color: #5da384;
+        text-decoration: underline; }
+
+.separadorPrincipal {
+  width: 100%; }
 
 #catalogo h2 {
   text-align: center;
@@ -575,7 +577,8 @@ main {
   margin: 20px 20px 50px 20px;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; }
+  align-items: center;
+  /* FORMULARIO */ }
   #contacto h2 {
     text-align: center;
     padding: 20px; }
