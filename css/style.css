@@ -114,7 +114,7 @@ footer {
           height: 30px; } }
 
 #sectionPrincipal {
-  background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.jpg);
+  background-image: linear-gradient(-160deg, rgba(255, 255, 255, 0.483), rgba(2, 63, 54, 0.951)), url(../img/background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
