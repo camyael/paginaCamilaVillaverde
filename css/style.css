@@ -52,6 +52,9 @@ header {
     header nav ul {
       gap: 40px;
       margin-bottom: 0; }
+      @media (max-width: 991px) {
+        header nav ul {
+          gap: 20px; } }
       header nav ul li {
         font-family: "Josefin Sans", sans-serif;
         font-size: 15px;
