@@ -152,6 +152,7 @@ footer {
       @media screen and (max-width: 768px) {
         #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
           background-color: #ddfff08a;
+          width: 430px;
           height: 230px; } }
       @media screen and (max-width: 600px) {
         #sectionPrincipal .principal_plantadelmes .plantadelmes_info {
