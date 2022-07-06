@@ -20,16 +20,19 @@
         }
         p {
             font-size: 18px;
-            line-height: normal;
             font-weight: 400px;
             a {
                 color: #163b2a;
                 font-weight: 600;
                 text-decoration: none;
+                &:hover {
+                    color:#5da384;
+                }
             }
         }
     }
 }
+
 .nosotros_medidas {
     margin: 20px 85px 70px 85px;
 
