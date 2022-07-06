@@ -23,9 +23,9 @@
                     transform: scale(1.1);
                 }
             }
-            .productosdimensiones {
+            &.productosdimensiones {
                 @include flex (column, nowrap);
-                gap: 0.5rem;
+                gap: 0.6rem;
             }
             figcaption {
                 font-weight: bolder;
