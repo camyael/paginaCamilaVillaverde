@@ -2,8 +2,6 @@
 
 Plant et Pots forma parte del Proyecto Final de Desarrollo Web en Coderhouse, mi primer maquetado en HTML, CSS, Bootstrap y SASS.
 
-![](imagen.jpg)
-
 ## Demo
 
 Te invito a ver la demo de la pagina [aquí](https://camyael.github.io/plant_et_pots).
